@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'Oswald';
+  src: url(https://fonts.gstatic.com/s/oswald/v26/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiZQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'selimaregular';
+    src: url('selima_-webfont.eot');
+    src: url('selima_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('selima_-webfont.woff2') format('woff2'),
+         url('selima_-webfont.woff') format('woff'),
+         url('selima_-webfont.ttf') format('truetype'),
+         url('selima_-webfont.svg#selimaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* reset page */
+* {box-sizing: border-box;}
+ a{color: #545454}
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Montserrat', 'verdana', 'arial', sans-serif;
+  font-size: 16px;
+  margin:0;
+  padding:0;
+  background-color: #fff;
+  min-height:100%;
+  position:relative;
+}
+img{
+  /* margin:0 auto; */
+  width: 400px;
+  max-width: 100%;
+}
+h1{
+  padding: 20px;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 65px;
+}
+h2,h3,h4{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* header */
+header{
+  background: linear-gradient(
+    rgba(255, 238, 229, 0.85),
+    rgba(255, 238, 229, 0.85)),
+    url(../img/style-colorful2.png) center;
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+  color: #fcfae8;
+}
+.navbar{
+  font-family: 'Oswald', 'verdana', sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.current-menu{
+  text-decoration: underline;
+  /* border-bottom: 3px solid #fcfae8; */
+}
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-toggler {
+  color: #8fa382;
+  font-weight: 700;
+}
+.navbar-toggler{
+  border: none;
+}
+button:focus{
+  outline: none;
+}
+/* .header-logo{
+  padding: 0 0 50px;
+} */
+#logo{
+  /* display:block; */
+  width: 400px;
+  /* max-width: 70%; */
+  /* padding: 0 auto 50px; */
+}
+#logo:hover {
+  box-shadow: 0 0 2px 5px rgba(143, 96, 96, 0.3);
+}
+#collapsibleNavbar{
+  justify-content: flex-end;
+}
+
+/* navbar change color on scrolling */
+.navbar-fixed-top.scrolled {
+  background-color: #f9e8dc !important;
+  transition: background-color 100ms linear;
+}
+
+article{
+  margin: 10px 20px;
+}
+
+.shadow {
+ position: relative;
+ -moz-box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
+ -webkit-box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
+ box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
+ outline: 2px solid #8fa382;
+ outline-offset: -15px;
+}
+
+.circlepic{
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  border-radius: 50em;
+}
+
+.pink{
+  background-color: rgba(255, 237, 229, 0.3);
+}
+
+.green{
+  background-color: rgba(143, 163, 130, 0.2);
+  
+}
+
+.light{
+  background-color: rgba(252, 243, 237, 0.3);
+}
+.types{
+  color:black;
+  font-family: 'selimaregular';
+  letter-spacing: 3px;
+}
+
+.indi{
+  color:black;
+  font-family: 'Dancing Script', cursive;
+}
+/* form button */
+.btn-primary{
+  background-color: #8fa382;
+  border: none;
+  border-radius: 0.2em;
+}
+/* slowfashion iframe */
+.embed-responsive{
+  width: 600px;
+  max-width: 100%;
+  float: left;
+}
+
+iframe{
+  padding: 0 10px 10px 0;
+}
+
+
+
+/*Footer*/
+footer{
+  padding: 10px;
+  background-color: #8fa382;
+  color: #ffe0ce;
+}
+/* footer icon */
+.fa-facebook, .fa-instagram{
+  background: #8fa382;
+  border: 2px solid #ffe0ce;
+  color: #ffe0ce;
+}
