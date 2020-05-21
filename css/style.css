@@ -31,7 +31,7 @@ body{
   font-size: 16px;
   margin:0;
   padding:0;
-  background-color: #fff;
+  background-color: white;
   min-height:100%;
   position:relative;
 }
@@ -44,19 +44,16 @@ h1{
   padding: 20px;
   font-weight: 600;
   font-size: 28px;
-  margin-top: 65px;
 }
-h2,h3,h4{
+h2, h3, h4{
   font-weight: 600;
   font-size: 20px;
 }
-
 
 p {
   letter-spacing: 1px;
   line-height: 1.5;
 }
-
 /* Style all font awesome icons */
 .fa {
   padding: 15px;
@@ -121,30 +118,38 @@ button:focus{
 /* navbar change color on scrolling */
 .navbar-fixed-top.scrolled {
   background-color: #f9e8dc !important;
-  transition: background-color 100ms linear;
+  transition: background-color 200ms linear;
 }
 
-article{
-  margin: 10px 20px;
-}
+ article{
+  margin-bottom: 50px;
+} 
 
 .shadow {
  position: relative;
  -moz-box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
- -webkit-box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
- box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
+ -webkit-box-shadow: 1px 2px 4px rgba(143, 96, 96, .5);
+ box-shadow: 1px 2px 4px rgba(143, 96, 96, .5);
+ /* background-color: #8fa382; */
+ /* padding: 10px; */
  outline: 2px solid #8fa382;
  outline-offset: -15px;
 }
 
 .circlepic{
-  -webkit-border-radius: 50em;
+    -webkit-border-radius: 50em;
   -moz-border-radius: 50em;
   border-radius: 50em;
 }
 
+.index-page-about{
+  background-color: #FFEDE5;
+}
+
+
+
 .pink{
-   background-color: rgba(245,218,198, 0.3);
+  background-color: rgba(245,218,198, 0.3);
 }
 
 .green{
@@ -153,12 +158,12 @@ article{
 }
 
 .light{
-  background-color: rgba(252, 243, 237, 0.3);
+  background-color: rgba(252, 243, 237, 0.5);
 }
-.types{
+
+.selima{
   color:black;
   font-family: 'selimaregular';
-  letter-spacing: 3px;
 }
 
 .indi{
@@ -179,7 +184,7 @@ article{
 }
 
 iframe{
-  padding: 0 10px 10px 0;
+  padding: 0 10px 10px 10px;
 }
 
 
