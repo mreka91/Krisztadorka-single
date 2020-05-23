@@ -181,6 +181,13 @@ article span {
   color:black;
   font-family: 'Dancing Script', cursive;
 }
+
+
+.textp{
+  padding: 20px;
+}
+
+
 /* form button */
 .btn-primary{
   background-color: #8fa382;
