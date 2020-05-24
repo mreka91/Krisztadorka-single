@@ -263,8 +263,8 @@
       <div class=" col-md-8">
         <h2 class="">Küldj üzenetet!</h2>
         <br>
-        <form id="form" name="form" method="post" action="http://www.softstudio.se/sendEmail.php">
-          <input type="hidden" name="to" value="@gmail.com">
+        <form id="form" name="form" method="post"  action="https://formspree.io/xyynezeg">
+          <!--<input type="hidden" name="to" value="@gmail.com">-->
 
 
           <!-- <label for="name">Név:</label> <br>
@@ -280,7 +280,7 @@
           <div class="form-group">
             <label for="">E-mail:</label>
             <input type="email" class="form-control" id="from" name="from" aria-describedby="emailHelp" placeholder="E-mail cimed.." required>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-muted">Nem osztjuk meg senkivel.</small>
           </div>
 
           <!-- <label for="message" >Üzenet:</label> <br>
@@ -290,7 +290,7 @@
             <textarea class="form-control" id="message" name="message" cols="60" rows="10" maxlength="500"></textarea>
           </div>
 
-          <input type="submit" class=" btn btn-primary mb-2 pull-right" name="skicka" id="skicka" value="Üzenet küldése" onclick="alert('Köszönöm megkeresésed. Hamarosan válaszolok!')">
+          <button type="submit" class=" btn btn-primary mb-2 pull-right" id="skicka" onclick="alert('Köszönöm megkeresésed. Hamarosan válaszolok!')">Üzenet küldése</button>
 
         </form>
       </div>
