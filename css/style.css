@@ -118,6 +118,11 @@ button:focus{
 
 /* navbar change color on scrolling */
 .navbar-fixed-top.scrolled {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
   background-color: #f9e8dc !important;
   transition: background-color 200ms linear;
 }
