@@ -127,17 +127,32 @@ button:focus{
   transition: background-color 200ms linear;
 }
 
- article{
-  margin-bottom: 50px;
+ article {
+  padding: 70px;
   overflow: hidden;
   position: relative;
 } 
 
+.intro1 {
+  padding: 70px 70px 30px;
+}
 
-article span {
-  position: absolute;
-  top: -100px;
-  visibility: hidden;
+.intro2 {
+  padding: 30px 70px 70px;
+}
+
+@media (max-width: 768px) {
+  article{
+    padding: 70px 10px;
+  }
+
+  .intro1 {
+    padding: 70px 10px 20px;
+  }
+
+  .intro2 {
+    padding: 30px 10px 20px;
+  }
 }
 
 .shadow {
