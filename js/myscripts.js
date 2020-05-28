@@ -6,6 +6,16 @@ $(function () {
       var $nav = $(".navbar-fixed-top");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
+  
+  // Close the navbar-collapse on click outside
+    $(document).click(function (event) {
+      var clickover = $(event.target);
+      var $navbar = $(".navbar-collapse");
+      var _opened = $navbar.hasClass("show");
+      if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+          $navbar.collapse('hide');
+      }
+    });
 
   // Lägg till en stil i en tagg på den nuvarande hoppningssidan
     var local = window.location.href;
