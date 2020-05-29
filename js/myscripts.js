@@ -16,9 +16,9 @@ $(function () {
           $navbar.collapse('hide');
       }
     });
-
+/* 
   // Lägg till en stil i en tagg på den nuvarande hoppningssidan
-   /* var local = window.location.href;
+   var local = window.location.href;
     var tda = $('#navbar-menu li a');
     for(var i = 0; i < tda.length;i++){
       var cd = tda.length;
@@ -26,8 +26,8 @@ $(function () {
           tda[i].parentElement.className="current-menu";//如果当前地址和菜单栏的某个栏目地址相等，则用到样式current-
         }
     }
-
-}); */
+*/
+}); 
 
 
 
