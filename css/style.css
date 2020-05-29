@@ -128,18 +128,31 @@ button:focus{
 }
 
  article{
-  margin-bottom: 50px;
+  padding: 70px;
   overflow: hidden;
   position: relative;
 } 
-
-
-article span {
-  position: absolute;
-  top: -100px;
-  visibility: hidden;
+.intro1 {
+  padding: 70px 70px 30px;
 }
 
+.intro2 {
+  padding: 30px 70px 70px;
+}
+
+@media (max-width: 768px) {
+  article{
+    padding: 70px 10px;
+  }
+
+  .intro1 {
+    padding: 70px 10px 20px;
+  }
+
+  .intro2 {
+  position: absolute;	    padding: 30px 10px 20px;
+  top: -100px;	  }
+  
 .shadow {
  position: relative;
  -moz-box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
