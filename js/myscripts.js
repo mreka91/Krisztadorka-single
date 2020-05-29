@@ -6,7 +6,7 @@ $(function () {
       var $nav = $(".navbar-fixed-top");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
-
+/* with one page site doesn't work so well  
   // Lägg till en stil i en tagg på den nuvarande hoppningssidan
     var local = window.location.href;
     var tda = $('#navbar-menu li a');
@@ -16,7 +16,7 @@ $(function () {
           tda[i].parentElement.className="current-menu";//如果当前地址和菜单栏的某个栏目地址相等，则用到样式current-
         }
     }
-
+*/
 });
 
 
