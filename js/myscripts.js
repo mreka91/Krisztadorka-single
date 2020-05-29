@@ -6,9 +6,20 @@ $(function () {
       var $nav = $(".navbar-fixed-top");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
-/* with one page site doesn't work so well  
+  
+  // Close the navbar-collapse on click outside
+    $(document).click(function (event) {
+      var clickover = $(event.target);
+      var $navbar = $(".navbar-collapse");
+      var _opened = $navbar.hasClass("show");
+      if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+          $navbar.collapse('hide');
+      }
+    });
+  
+/* with one page site doesn't work so well 
   // Lägg till en stil i en tagg på den nuvarande hoppningssidan
-    var local = window.location.href;
+   var local = window.location.href;
     var tda = $('#navbar-menu li a');
     for(var i = 0; i < tda.length;i++){
       var cd = tda.length;
@@ -17,7 +28,8 @@ $(function () {
         }
     }
 */
-});
+}); 
+
 
 
 

@@ -75,7 +75,7 @@ header{
   background: linear-gradient(
     rgba(255, 238, 229, 0.85),
     rgba(255, 238, 229, 0.85)),
-    url(../img/style-colorful2.png) center;
+    url(../img/108429939_s.jpg) center;
   background-size: cover;
   object-fit: cover;
   text-align: center;
@@ -127,11 +127,11 @@ button:focus{
   transition: background-color 200ms linear;
 }
 
- article {
+ article{
   padding: 70px;
   overflow: hidden;
   position: relative;
-} 
+}
 
 .intro1 {
   padding: 70px 70px 30px;
@@ -151,10 +151,10 @@ button:focus{
   }
 
   .intro2 {
-    padding: 30px 10px 20px;
+  padding: 30px 10px 20px;
   }
 }
-
+  
 .shadow {
  position: relative;
  -moz-box-shadow: 1px 2px 4px rgba(143, 96, 96, 0.5);
