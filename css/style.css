@@ -151,6 +151,10 @@ article span {
  outline-offset: -15px;
 }
 
+.shadow:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .circlepic{
     -webkit-border-radius: 50em;
   -moz-border-radius: 50em;
