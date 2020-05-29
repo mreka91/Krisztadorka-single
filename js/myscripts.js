@@ -18,7 +18,7 @@ $(function () {
     });
 
   // Lägg till en stil i en tagg på den nuvarande hoppningssidan
-    var local = window.location.href;
+   /* var local = window.location.href;
     var tda = $('#navbar-menu li a');
     for(var i = 0; i < tda.length;i++){
       var cd = tda.length;
@@ -27,7 +27,7 @@ $(function () {
         }
     }
 
-});
+}); */
 
 
 
