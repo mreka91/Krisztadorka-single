@@ -151,9 +151,8 @@ button:focus{
 
   .intro2 {
   padding: 30px 10px 20px;
-  position: absolute;	   
-  top: -100px;	  
   }
+}
   
 .shadow {
  position: relative;
