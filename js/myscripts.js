@@ -16,7 +16,8 @@ $(function () {
           $navbar.collapse('hide');
       }
     });
-/* 
+  
+/* with one page site doesn't work so well 
   // Lägg till en stil i en tagg på den nuvarande hoppningssidan
    var local = window.location.href;
     var tda = $('#navbar-menu li a');
@@ -28,6 +29,7 @@ $(function () {
     }
 */
 }); 
+
 
 
 
