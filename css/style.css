@@ -80,6 +80,8 @@ header{
   object-fit: cover;
   text-align: center;
   color: #fcfae8;
+  height:350px;
+  max-height:100%;
 }
 .navbar{
   font-family: 'Oswald', 'verdana', sans-serif;
@@ -105,7 +107,7 @@ button:focus{
 } */
 #logo{
   /* display:block; */
-  width: 400px;
+  /* width: 400px; */
   /* max-width: 70%; */
   /* padding: 0 auto 50px; */
 }
@@ -242,4 +244,69 @@ footer{
   background: #8fa382;
   border: 2px solid #ffe0ce;
   color: #ffe0ce;
+}
+
+
+/* logo border animation */
+
+.box{
+  width: 420px;
+  max-width: 100%;
+  height: 240px;
+  max-height: 100%;
+  /* background: url(./img/logo/lal.png) no-repeat center; */
+  background-size: cover;
+  position: relative;
+  left: 50%;
+  top: 120px;
+  transform: translate(-50%, -50%);
+}
+.box::before, .box::after{
+  content: '';
+  border: 5px solid #8fa382;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -10px;
+  /* clip: rect(top, right, bottom, left);  450*270 */
+  /* clip: rect(0, 450px, 5px, 0px); */
+  /* clip: rect(0, 5px, 270px, 0px); */
+  /* clip: rect(265px, 450px, 270px, 0px); */
+  /* clip: rect(0, 450px, 270px, 445px); */
+  animation: borderClip 8s linear infinite;
+
+}
+.box::after{
+  animation-delay: -4s;
+}
+.box:hover::before, .box:hover::after{
+  animation-play-state: paused;
+}
+@keyframes borderClip {
+  0%, 100%{
+    clip: rect(0, 450px, 5px, 0px);
+  }
+  25%{
+    clip: rect(0, 5px, 280px, 0px);
+  }
+  50%{
+    clip: rect(255px, 450px, 280px, 0px);
+  }
+  75%{
+    clip: rect(0, 450px, 280px, 455px);
+  }
+}
+
+.mobil-logo{
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .mobil-logo{
+    display: block;
+  }
+  .box{
+    display: none;
+  }
 }
